@@ -8,11 +8,18 @@
     <style></style>
 </head>
 <body>
-    <h1>Welcome to Gitpub</h1>
+    <h1>Welcome to Gitpub! Select from our menu below!</h1>
+    <h3>Drinks</h3>
     <% for(let i = 0; i<allDrinks.length; i++){ %>
         <li>
-            <a href="/gitpub/drinks/<%=i%>"><%=allDrinks[i].name %></a>
+            <a href="/gitpub/drinks/<%=i%>"><%=allDrinks[i].name%></a>
         </li>
    <% } %>
+   <h3>Food</h3>
+   <% for(let i = 0; i<allFood.length; i++){ %>
+    <li>
+        <a href="/gitpub/food/<%=i%>"><%=allFood[i].name %></a>
+    </li>
+<% } %>
 </body>
 </html>
