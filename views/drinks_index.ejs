@@ -11,8 +11,11 @@
     <h1>Welcome to Gitpub! Select from our menu below!</h1>
     <h3>Drinks</h3>
     <% for(let i = 0; i<allDrinks.length; i++){ %>
+        <% const drink = allDrinks[i] %>
+        <% const drinkName = drink.name %>
+        <% const capWord = drinkName.charAt(0).toUpperCase() + drinkName.slice(1) %>
         <li>
-            <a href="/gitpub/drinks/<%=i%>"><%=allDrinks[i].name%></a>
+            <a href="/gitpub/drinks/<%=i%>"><%=capWord%></a>
         </li>
    <% } %>
    <h3>Food</h3>
