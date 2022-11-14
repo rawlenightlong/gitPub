@@ -15,7 +15,7 @@ app.listen(3000, () => {
 // First GET Route
 
 app.get('/gitpub', (req, res) => {
-    res.send(`Welcome to GitPub! <a href="/gitpub/drinks">Take a look at our menu</a>`)
+    res.send(`Welcome to GitPub!! <a href="/gitpub/drinks">Take a look at our menu</a>`)
 })
 
 
